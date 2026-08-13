@@ -119,7 +119,7 @@ async def get_current_user(token:str = Depends(oauth2_scheme)) -> User:
 
 # TODO 4: Login endpoint — accepts email and password, issues a signed token on success.
 # Check the credentials against the user store and reject invalid combinations.
-# On success, return a token the client can use for all subsequent requests.
+# On success, return a token the client can use for all subsequent requests
 
 @router.post("/login", response_model=Token)
 async def login(form_data: OAuth2PasswordRequestForm = Depends()):

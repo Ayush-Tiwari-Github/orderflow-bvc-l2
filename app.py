@@ -52,7 +52,7 @@ class OrderRequest(BaseModel):
     quantity: int
 
 
-# ── Routes ────────────────────────────────────────────────────────────────────
+# ── Routes ───────────────────────────────────────────────────────────────
 
 @app.get("/products")
 # TODO 2 — Protect this route with JWT auth
